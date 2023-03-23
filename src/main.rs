@@ -7,6 +7,8 @@ fn main() -> () {
     let blue_ref = 0x1;
 
     let mut color = 0xFF0000;
+    // I might run this in a match statement or something like that later, but if stacks don't affect
+    // speed very much on newer CPUs so ehh
     loop {
         color = color + red_inc + green_inc + blue_inc;
         if color == 0xFF0000 {
